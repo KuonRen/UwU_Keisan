@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ぴょこのうたたね計算表</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="page-header">
+        <h1>ぴょこのうたたね - 料金計算</h1>
+    </header>
+
+    <main class="page-main">
+        <section class="menu-area">
+            <section class="section menu-section">
+                <h2>商品一覧</h2>
+
+                <div class="menu-group">
+                    <h3>食べ物</h3>
+                    <div id="food-list" class="item-list"></div>
+                </div>
+
+                <div class="menu-group">
+                    <h3>飲み物</h3>
+                    <div id="drink-list" class="item-list"></div>
+                </div>
+            </section>
+        </section>
+
+        <aside class="summary-area">
+            <section class="section summary-section">
+                <h2>計算結果</h2>
+
+                <div class="summary-card">
+                    <div class="summary-row">
+                        <span>小計</span>
+                        <span id="subtotal">¥0</span>
+                    </div>
+                    <div class="summary-row total-row">
+                        <span>合計</span>
+                        <span id="total">¥0</span>
+                    </div>
+                </div>
+
+                <div class="detail-card">
+                    <h3>明細</h3>
+                    <ul id="detail-list" class="detail-list"></ul>
+                </div>
+            </section>
+        </aside>
+    </main>
+
+    <footer class="page-footer">
+        <small>ぴょこのうたたね</small>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
